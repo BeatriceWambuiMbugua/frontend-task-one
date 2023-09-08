@@ -7,6 +7,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  text-align: center;
 }
 p {
   font-family: "Didact Gothic", sans-serif;
@@ -15,37 +16,25 @@ p {
 .card {
   background-color: #222222;
   height: auto;
-  width: fit-content;
+  width: 400px;
   padding: 20px;
   border-radius: 8px;
 }
 
-.title-content {
-  display: flex;
-  align-items: center;
-}
-.title-content img {
+img {
   margin-right: 8px;
   border-radius: 50%;
   width: 100px;
   height: 100px;
+  text-align: center;
 }
-.title-content h2 {
+h2 {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
-.card-date {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card-date .card-day {
-  margin-right: 8px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.button {
+
+a {
   background-color: #551825;
   padding: 8px 20px;
   text-decoration: none;
@@ -56,16 +45,6 @@ p {
   color: #f8f8f8;
   border-radius: 20px;
   text-align: center;
-}
-.card-button {
   text-align: center;
-  margin: 8px 0px;
-}
-.card-data {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card-data p {
-  margin-right: 8px;
+  margin-top: 20px;
 }
