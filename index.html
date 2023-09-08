@@ -25,7 +25,11 @@
           alt="BeatriceWambuiMbugua"
           data-testid="slackDisplayImage"
         />
-        <h2 data-testid="slackUserName">Beatrice Wambui Mbugua</h2>
+        <div>
+            <h2 data-testid="slackUserName">Beatrice Wambui Mbugua</h2>
+            <p data-testid="myTrack">FrontEnd</p>
+        </div>
+       
       </div>
 
       <div class="card-date" data-testid="currentDayOfTheWeek">
@@ -34,6 +38,8 @@
         <p class="card-day">and the miliseconds in UTC are</p>
         <p id="miliSeconds" data-testid="currentUTCTime"></p>
       </div>
+
+      
     </main>
 
     <script type="text/javascript">
@@ -49,7 +55,6 @@
       const d = new Date();
       let toDay = weekday[d.getDay()];
       let miliSeconds = d.getUTCMilliseconds();
-
 
       document.getElementById("day").innerHTML = toDay;
       document.getElementById("miliSeconds").innerHTML = miliSeconds;
