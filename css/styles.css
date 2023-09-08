@@ -3,8 +3,12 @@ body {
     color-scheme: dark;
     background-color: #111111;
     color: #f8f8f8;
+    margin: 0px;
   }
-
+p{
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 14px;
+}
   .card{
     background-color: #222222;
     height: auto;
@@ -30,8 +34,7 @@ body {
   }
   .card-date{
     display: inline-flex;
-    font-family: "Didact Gothic", sans-serif;
-    font-size: 14px;
+   
   }
   .card-date .card-day{
     margin-right: 4px;
