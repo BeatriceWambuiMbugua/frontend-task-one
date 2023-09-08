@@ -19,37 +19,20 @@
   </head>
   <body>
     <main class="card">
-      <div class="title-content">
-        <img
-          data-testid="slackDisplayImage"
-          src="/assets/images/bobo.png"
-          alt="Beatrice Wambui Mbugua"
-        />
-        <div>
-          <h2 data-testid="slackUserName" style="margin: 0px">
-            Slack User Name: Beatrice Wambui Mbugua
-          </h2>
-          <p data-testid="myTrack" style="margin: 0px">Track: Frontend</p>
-        </div>
-      </div>
-
-      <div class="card-date">
-        <p class="card-day">Day:</p>
-        <p data-testid="currentDayOfTheWeek" id="day" class="card-day"></p>
-      </div>
-      <div class="card-data">
-        <p class="card-day">Milliseconds:</p>
-        <p data-testid="currentUTCTime" id="miliSeconds"></p>
-      </div>
-
-      <div class="card-button">
-        <a
-          data-testid="githubUrl"
-          class="button"
-          href="https://github.com/BeatriceWambuiMbugua/frontend-task-one"
-          >Github</a
-        >
-      </div>
+      <img
+        data-testid="slackDisplayImage"
+        src="/assets/images/bobo.png"
+        alt="Beatrice Wambui Mbugua"
+      />
+      <h2 data-testid="slackUserName">Beatrice Wambui Mbugua</h2>
+      <p data-testid="myTrack">Frontend</p>
+      <p data-testid="currentDayOfTheWeek" id="day">Monday</p>
+      <p data-testid="currentUTCTime" id="miliSeconds">000</p>
+      <a
+        data-testid="githubUrl"
+        href="https://github.com/BeatriceWambuiMbugua/frontend-task-one"
+        >Github</a
+      >
     </main>
 
     <script type="text/javascript">
@@ -64,10 +47,7 @@
       ];
       const d = new Date();
       let toDay = weekday[d.getDay()];
-      // let miliSeconds = d.getUTCHours().getUTCMinutes().getUTCMilliseconds();
-
       document.getElementById("day").innerHTML = toDay;
-      // document.getElementById("miliSeconds").innerHTML = miliSeconds;
 
       function getCurrentUCTTime(x, n) {
         while (x.toString().length < n) {
