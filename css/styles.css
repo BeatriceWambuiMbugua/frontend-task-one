@@ -41,7 +41,8 @@ p{
     font-weight: 500;
   }
   .card-date{
-    display: inline-flex;
+    display: flex;
+   
    
   }
   .card-date .card-day{
@@ -62,4 +63,11 @@ p{
 .card-button{
     text-align: center;
     margin: 8px 0px;
+}
+.card-data{
+  display: flex;
+  text-align: center;
+}
+.card-data p{
+  margin-right: 8px;
 }

@@ -21,29 +21,31 @@
     <main class="card">
       <div class="title-content">
         <img
-          src="/assets/images/bobo.png"
-          alt="BeatriceWambuiMbugua"
           data-testid="slackDisplayImage"
+          src="/assets/images/bobo.png"
+          alt="Beatrice Wambui Mbugua"
         />
         <div>
-          <h2 style="margin: 0px" data-testid="slackUserName">
-            Beatrice Wambui Mbugua
+          <h2 data-testid="slackUserName" style="margin: 0px">
+            Slack User Name: Beatrice Wambui Mbugua
           </h2>
-          <p style="margin: 0px" data-testid="myTrack">FrontEnd</p>
+          <p data-testid="myTrack" style="margin: 0px">Track: FrontEnd</p>
         </div>
       </div>
 
-      <div class="card-date" >
-        <p class="card-day">Today is on</p>
-        <p id="day" class="card-day" data-testid="currentDayOfTheWeek"></p>
-        <p class="card-day">and the miliseconds in UTC are</p>
-        <p id="miliSeconds" data-testid="currentUTCTime"></p>
+      <div class="card-date">
+        <p class="card-day">Day:</p>
+        <p data-testid="currentDayOfTheWeek" id="day" class="card-day"></p>
+      </div>
+      <div class="card-data">
+        <p class="card-day">Miliseconds:</p>
+        <p data-testid="currentUTCTime" id="miliSeconds"></p>
       </div>
 
       <div class="card-button">
         <a
+          data-testid="githubUrl"
           class="button"
-          data-testid=“githubURL”
           href="https://github.com/BeatriceWambuiMbugua/frontend-task-one"
           >Github</a
         >
