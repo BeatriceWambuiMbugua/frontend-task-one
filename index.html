@@ -29,7 +29,7 @@
           <h2 data-testid="slackUserName" style="margin: 0px">
             Slack User Name: Beatrice Wambui Mbugua
           </h2>
-          <p data-testid="myTrack" style="margin: 0px">Track: FrontEnd</p>
+          <p data-testid="myTrack" style="margin: 0px">Track: Frontend</p>
         </div>
       </div>
 
@@ -64,10 +64,13 @@
       ];
       const d = new Date();
       let toDay = weekday[d.getDay()];
-      let miliSeconds = d.getUTCMilliseconds();
+     // let miliSeconds = d.getUTCHours().getUTCMinutes().getUTCMilliseconds();
 
       document.getElementById("day").innerHTML = toDay;
-      document.getElementById("miliSeconds").innerHTML = miliSeconds;
+     // document.getElementById("miliSeconds").innerHTML = miliSeconds;
+
+     let miliSeconds = d.getUTCMilliseconds();
+     document.getElementById("miliSeconds").innerHTML = miliSeconds;
     </script>
   </body>
 </html>
