@@ -7,17 +7,47 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="icon" type="image/x-icon" href="/assets/images/bobo.png" />
     <!-- font links -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic:regular" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Didact+Gothic:regular"
+      rel="stylesheet"
+    />
     <title>Personal Card</title>
   </head>
   <body>
     <main class="card">
-        <div class="title-content">
-            <img src="/assets/images/bobo.png" alt="BeatriceWambuiMbugua" data-testid="slackDisplayImage"/>
-            <h2 data-testid="slackUserName">Beatrice Wambui Mbugua</h2>
-        </div>
+      <div class="title-content">
+        <img
+          src="/assets/images/bobo.png"
+          alt="BeatriceWambuiMbugua"
+          data-testid="slackDisplayImage"
+        />
+        <h2 data-testid="slackUserName">Beatrice Wambui Mbugua</h2>
+      </div>
 
+      <div class="card-date" data-testid="currentDayOfTheWeek">
+        <p class="card-day">Today is on</p>
+        <p id="day"></p>
+      </div>
     </main>
+
+    <script type="text/javascript">
+      const weekday = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      const d = new Date();
+      let toDay = weekday[d.getDay()];
+
+      document.getElementById("day").innerHTML = toDay;
+    </script>
   </body>
 </html>
