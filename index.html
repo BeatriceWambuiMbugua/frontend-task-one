@@ -64,13 +64,24 @@
       ];
       const d = new Date();
       let toDay = weekday[d.getDay()];
-     // let miliSeconds = d.getUTCHours().getUTCMinutes().getUTCMilliseconds();
+      // let miliSeconds = d.getUTCHours().getUTCMinutes().getUTCMilliseconds();
 
       document.getElementById("day").innerHTML = toDay;
-     // document.getElementById("miliSeconds").innerHTML = miliSeconds;
+      // document.getElementById("miliSeconds").innerHTML = miliSeconds;
 
-     let miliSeconds = d.getUTCMilliseconds();
-     document.getElementById("miliSeconds").innerHTML = miliSeconds;
+      function getCurrentUCTTime(x, n) {
+        while (x.toString().length < n) {
+          x = "0" + x;
+        }
+        return x;
+      }
+
+      let hours = getCurrentUCTTime(d.getUTCHours(), 2);
+      let minutes = getCurrentUCTTime(d.getUTCMinutes(), 2);
+      let seconds = getCurrentUCTTime(d.getUTCSeconds(), 2);
+      let milliSeconds = getCurrentUCTTime(d.getUTCMilliseconds(), 3);
+      let time = hours + ":" + minutes + ":" + seconds + ":" + milliSeconds;
+      document.getElementById("miliSeconds").innerHTML = time;
     </script>
   </body>
 </html>
