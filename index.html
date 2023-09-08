@@ -30,7 +30,9 @@
 
       <div class="card-date" data-testid="currentDayOfTheWeek">
         <p class="card-day">Today is on</p>
-        <p id="day"></p>
+        <p id="day" class="card-day"></p>
+        <p class="card-day">and the miliseconds in UTC are</p>
+        <p id="miliSeconds"></p>
       </div>
     </main>
 
@@ -46,8 +48,11 @@
       ];
       const d = new Date();
       let toDay = weekday[d.getDay()];
+      let miliSeconds = d.getUTCMilliseconds();
+
 
       document.getElementById("day").innerHTML = toDay;
+      document.getElementById("miliSeconds").innerHTML = miliSeconds;
     </script>
   </body>
 </html>
