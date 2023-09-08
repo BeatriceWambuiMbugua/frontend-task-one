@@ -3,17 +3,25 @@ body {
     color-scheme: dark;
     background-color: #111111;
     color: #f8f8f8;
-    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   
   }
 p{
     font-family: "Didact Gothic", sans-serif;
     font-size: 14px;
+   
 }
   .card{
     background-color: #222222;
     height: auto;
     width: fit-content;
     padding: 20px;
+    border-radius: 8px;
+   
    
   }
 
@@ -39,3 +47,18 @@ p{
   .card-date .card-day{
     margin-right: 4px;
   }
+.button{
+    background-color: #551825;
+    padding: 8px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 14px;
+    color: #f8f8f8;
+    border-radius: 20px;
+    text-align: center;
+}
+.card-button{
+    text-align: center;
+}
