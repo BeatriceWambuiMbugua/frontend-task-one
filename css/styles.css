@@ -28,3 +28,11 @@ body {
     font-size: 14px;
     font-weight: 500;
   }
+  .card-date{
+    display: inline-flex;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 14px;
+  }
+  .card-date .card-day{
+    margin-right: 4px;
+  }
